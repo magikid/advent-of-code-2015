@@ -1,8 +1,8 @@
 image: alpine/latest
+packages:
+   - cargo
+   - rust
 tasks:
-- install-deps: |
-   apk update
-   apk add cargo rust
 - run-tests: |
    cargo clean
    cargo test
