@@ -3,6 +3,8 @@ packages:
    - cargo
    - rust
 tasks:
-- run-tests: |
+- setup: |
+   cd advent-of-code-2015
    cargo clean
+- run-tests: |
    cargo test
