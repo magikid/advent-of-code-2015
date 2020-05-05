@@ -7,4 +7,5 @@ tasks:
    cd advent-of-code-2015
    cargo clean
 - run-tests: |
+   cd advent-of-code-2015
    cargo test
