@@ -1,7 +1,8 @@
-image: alpine/edge
+image: alpine/latest
 tasks:
 - install-deps: |
-   pkg update
-   pkg add rust
+   apk update
+   apk add cargo rust
 - run-tests: |
+   cargo clean
    cargo test
