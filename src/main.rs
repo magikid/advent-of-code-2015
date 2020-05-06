@@ -6,6 +6,7 @@ use env_logger::Env;
 use std::env;
 
 mod day1;
+mod day2;
 
 fn main() {
     let env = Env::default()
@@ -20,6 +21,7 @@ fn main() {
 
     match day.as_str() {
         "1" => println!("day1 p1: {:?}, p2: {:?}", day1::p1(), day1::p2()),
+        "2" => println!("day2 p1: {:?}, p2: {:?}", day2::p1(), day2::p2()),
         _ => panic!("You forgot to specify a day"),
     }
 }
