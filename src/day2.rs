@@ -23,6 +23,7 @@ fn get_puzzle_input() -> Vec<PresentBox> {
     let file = "d2p1.txt";
     let contents = fs::read_to_string(format!("inputs/{}", file))
         .expect(format!("Somthing went wrong reading the file inputs/{}", file).as_str());
+
     contents
         .split('\n')
         .take_while(|&line| line != "")
